@@ -68,23 +68,23 @@ To see the Smart-ID in action and to actually use it to log into a website and g
 
 Use following specification for integrating Smart-ID into your system:
 
-*   [Smart-ID Relying Party integration guide and API specification](download/Smart-IDRelyingPartyintegrationguideandAPIspecification.pdf)
+*   [Smart-ID Relying Party integration guide and API specification](https://github.com/SK-EID/smart-id-documentation)
 
 In demo environment you can use following configuration:
 
 *   The base URL for DEMO environment is https://sid.demo.sk.ee/smart-id-rp/v1/
 *   relyingPartyUUID: 00000000-0000-0000-0000-000000000000
 *   relyingPartyName: DEMO
-*   Smart-ID login buttons. Free to use! [Download](Smart-ID_login.zip)
+*   Smart-ID login buttons. Free to use! [Download](https://github.com/SK-EID/smart-id-documentation/raw/master/files/Smart-ID_login.zip)
 
 NB! DEMO relyingPartyUUID has no access to Smart-ID Basic accounts.
 
 *   When using "certificateLevel":"ADVANCED" in requests then HTTP error _403 Forbidden_ is returned.
 *   When user has only Smart-ID Basic account then HTTP error _404 Not Found_ is returned.
 
-[Smart-ID signature verification and verification code calculation example in java](verify.java)
+[Smart-ID signature verification and verification code calculation example in java](https://github.com/SK-EID/smart-id-documentation/blob/master/files/verify.java)
 
-[Smart-ID verification code calculation example in php](control_code.txt)
+[Smart-ID verification code calculation example in php](https://github.com/SK-EID/smart-id-documentation/blob/master/files/control_code.php)
 
 </div>
 
