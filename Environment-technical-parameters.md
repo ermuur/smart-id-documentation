@@ -1,8 +1,8 @@
 <div id="TOC">
 
-*   [LIVE](#Parameters)
-*   [DEMO](#Parameters)
-*   [Test accounts for automated testing](#Accounts)
+*   [LIVE](#parameters)
+*   [DEMO](#parameters)
+*   [Test accounts for automated testing](#accounts)
 
 </div>
 
