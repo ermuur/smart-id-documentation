@@ -15,7 +15,7 @@
 |  base URL | https://rp-api.smart-id.com/ |
 
 
-
+Add Smart-ID to your e-service! [Order now!](https://sk.ee/en/services/smart-id/)  
 
 
 
@@ -30,8 +30,11 @@
 |  relyingPartyUUID | 00000000-0000-0000-0000-000000000000 |
 |  relyingPartyName | DEMO |
 
+Smart-ID login buttons. Free to use! [Download](Smart-ID_login.zip)  
+NB! DEMO relyingPartyUUID has no access to Smart-ID Basic accounts.
 
-
+*   When using "certificateLevel":"ADVANCED" in requests then HTTP error _403 Forbidden_ is returned.
+*   When user has only Smart-ID Basic account then HTTP error _404 Not Found_ is returned.
 
 
 
