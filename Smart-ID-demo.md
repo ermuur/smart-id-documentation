@@ -78,12 +78,13 @@ Use following specification for integrating Smart-ID into your system:
 <div class="content-section">
 
 ## Give us feedback
+[Contact](https://github.com/SK-EID/smart-id-documentation/wiki/Contact)
 
-All feedback to the beta version is much appreciated. Please send it to the e-mail address [support@sk.ee](mailto:support@sk.ee?subject=Smart-ID%20closed%20beta%20feedback)
+All feedback to the Smart-ID DEMO version is much appreciated. Please send it to the e-mail address [support@sk.ee](mailto:support@sk.ee?subject=Smart-ID%20DEMO%20feedback)
 
 When you report a problem, please include at least the following information:
 
-*   E-mail subject: Smart-ID closed beta feedback
+*   E-mail subject: Smart-ID DEMO feedback
 *   detailed description of the problem (if possible with screenshots)
 *   date and time when the problem occurred
 *   your device model and version of the operating system
@@ -91,7 +92,4 @@ When you report a problem, please include at least the following information:
 *   your account UUID, you will find it on SmartID App account management section
 
 </div>
-
-[Contact](https://github.com/SK-EID/smart-id-documentation/wiki/Contact)
-
 </div>
