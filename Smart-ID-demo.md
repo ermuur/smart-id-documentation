@@ -70,10 +70,8 @@ Use following specification for integrating Smart-ID into your system:
 
 *   [Smart-ID Relying Party integration guide and API specification](https://github.com/SK-EID/smart-id-documentation)
 *   [demo environment technical parameters](https://github.com/SK-EID/smart-id-documentation/wiki/Environment-technical-parameters#demo-parameters)
+*   [Client libraries](https://github.com/SK-EID/smart-id-documentation/wiki/Client-libraries)
 
-[Smart-ID signature verification and verification code calculation example in java](verify.java)
-
-[Smart-ID verification code calculation example in php](control_code.txt)
 
 </div>
 
