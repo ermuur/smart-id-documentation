@@ -30,7 +30,7 @@
 |  relyingPartyUUID | 00000000-0000-0000-0000-000000000000 |
 |  relyingPartyName | DEMO |
 
-Smart-ID login buttons. Free to use! [Download](Smart-ID_login.zip)  
+Smart-ID login buttons. Free to use! [Download](https://github.com/SK-EID/smart-id-documentation/raw/master/files/Smart-ID_login.zip)  
 NB! DEMO relyingPartyUUID has no access to Smart-ID Basic accounts.
 
 *   When using "certificateLevel":"ADVANCED" in requests then HTTP error _403 Forbidden_ is returned.
