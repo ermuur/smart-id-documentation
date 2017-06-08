@@ -15,8 +15,8 @@
 |  base URL | https://rp-api.smart-id.com/ |
 
 
-Add Smart-ID to your e-service! [Order now!](https://sk.ee/en/services/smart-id/)  
-
+* Add Smart-ID to your e-service! [Order now!](https://sk.ee/en/services/smart-id/)  
+* [Contact](https://github.com/SK-EID/smart-id-documentation/wiki/Contact)
 
 
 
@@ -47,3 +47,4 @@ NB! DEMO relyingPartyUUID has no access to Smart-ID Basic accounts.
 | OK | EE | 10101010005 |
 | USER_REFUSED | EE | 10101010016 |
 | TIMEOUT | EE | 10101010027 |
+
