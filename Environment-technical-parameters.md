@@ -12,7 +12,7 @@
 
 |  Parameter | Value  |
 |---|---|
-|  base URL | https://rp-api.smart-id.com/ |
+|  base URL | https://rp-api.smart-id.com/v1/ |
 
 
 * Add Smart-ID to your e-service! [Order now!](https://sk.ee/en/services/smart-id/)  
