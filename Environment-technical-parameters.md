@@ -42,9 +42,17 @@ NB! DEMO relyingPartyUUID has no access to Smart-ID Basic accounts.
 
 ## Accounts
 
-|  EndResult | Country | national-identity-number |
-|---|---|---|
-| OK | EE | 10101010005 |
-| USER_REFUSED | EE | 10101010016 |
-| TIMEOUT | EE | 10101010027 |
+|  EndResult | Country | national-identity-number | certificateLevel |
+|---|---|---|---|
+| OK | EE | 10101010005  | QUALIFIED |
+| OK | LV | 010101-10006 | QUALIFIED |
+| OK | LV | 020101-10000 | ADVANCED |
+| OK | LT | 10101010005  | QUALIFIED |
+| OK | LT | 10101020001 | ADVANCED |
+| USER_REFUSED | EE | 10101010016 | QUALIFIED |
+| USER_REFUSED | LV | 010101-1001 | QUALIFIED |
+| USER_REFUSED | LV | 020101-10019 | ADVANCED |
+| USER_REFUSED | LT | 10101010016 | QUALIFIED |
+| USER_REFUSED | LT | 10101020012 | ADVANCED |
+| TIMEOUT | EE | 10101010027 | QUALIFIED |
 
