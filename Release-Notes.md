@@ -40,6 +40,57 @@
 * Demo app users can now log in to self-service by selecting "Estonia" when having checked "Other countries" in app during manual registration;
 * General bug fixes, performance and usability improvements.
 
+29.07.2017
+
+* Redesigned Menu;
+* Redesigned "Waiting approval" dialogues with ability to restart registration from menu if needed;
+* Help view now has app and lib versions visible;
+* Help view now has 2 support contact phone numbers displayed for all countries;
+* Help view now has white background (equals to Q design) if there are no active accounts;
+* Added timeout for multiple account transaction request views;
+* Added “National ID number not supported” error view when registering with ID-card and new Latvian ID-code;
+* Added “Invalid country code” error view when registering with bank link and bank returns INVALID_COUNTRY_CODE;
+* Added small help disclaimer for multiple account transaction request views in case of receiving extra notification screens per transaction;
+* Error views now direct to FAQ articles directly where applicable;
+* New "How To Use Smart-ID" onboarding cards when completing registration;
+* Improved minors registration flow, users under 18 can now register for a Smart-ID account;
+* Moved Terms & Conditions view immediately after authentication method selection to avoid timeouts when reading too long;
+* Readiness for electronic Qualified certificate issuance (EE, LT) which will be turned on later on July;
+* Implemented transaction pending local state retry logic. When transaction submission fails due to network error, then operation can be retried without additional PIN entry;
+* Fixed “Try again” in error view, when app is started without internet;
+* Fixed ID-card registration code not refreshing when app returns to foreground.
+* Fixed network error when receiving push message when power saver is turned on on some devices (Android);
+* Push upon arrival plays tune (Android);
+* Added option in menu to toggle notification sound on or off. Default is on (Android);
+* Control code is now always shown on new transactions (iOS);
+* Pressing transaction cancel now shows loader and error view if canceling fails (iOS);
+* “Navigate back to e-service” dialog is now shown on after completing transaction iOS9+ (iOS);
+* “Notifications disabled” dialog is now always shown after transaction when notifications are disabled (iOS);
+* General bug fixes, performance and usability improvements.
+
+* Added message to loader on signing application;
+* Added basic validation to legal guardian info from PRE;
+* Added tooltip for copy share content to clipboard button;
+* Added link to installer.id.ee/plugins on the missing plugins view;
+* Added multi doc format support and visible signature option for iSign;
+* Added support for Latvia SEB bank link onboarding for corporate customers;
+* Added new LV personal code support for NQ registration without age checking;
+* Added server session timeout manually for every session created and timeout for ID-card signing;
+* Added logging for register button clicks, missing plugins and bank-link handle-result session error;
+* Added custom styling and visuals for iSign gateway used for minors registration parent signing flow;
+* Updated copy, header and footer;
+* Updated login view visuals including M-ID & ID-card logos in login view and minors application signing;
+* Implemented new minors registration logic;
+* Implemented iSign API with improved logging for minors issuance;
+* Implemented RA-API and application saving for minor electronic issuance;
+* Portal now returns INVALID_COUNTRY_CODE in case country code is not EE, LV or LT;
+* Download cert buttons are now hidden behind a "..." button in self-service dashboard;
+* Fixed account delete issues, fixed account delete loader;
+* Fixed session invalidation when cancelling minors registration;
+* Fixed RA-API error handling, refactored general registration error handling;
+* Fixed iframe reload issue on language change, added modal for cancel conformation;
+* General bug fixes, performance and usability improvements.
+
 28.02.2017
 
 *   More reliable PIN dialogue notification for Android
