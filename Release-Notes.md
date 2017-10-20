@@ -6,9 +6,9 @@
 
 * New landing animation intro when starting registration starting from Android 5x and iOS 9x. Older devices show still image;
 * Improved animations to make the registration process and usage more fluid. These include:
-   * * Improved loader rotation, loader animating to success and fade-in success animations;
-* *    Slide animations between views - from right to left when moving forward and opposite when moving backwards;
-* *    All modals, alert and error views fade in and slightly slide in from top and disappear by fading out and sliding up;
+   * Improved loader rotation, loader animating to success and fade-in success animations;
+   * Slide animations between views - from right to left when moving forward and opposite when moving backwards;
+   * All modals, alert and error views fade in and slightly slide in from top and disappear by fading out and sliding up;
 * Improved app universal responsive design - various breakpoints for different screen sizes have been added for resizing text, buttons, icons and PIN pad;
 * During registration, users can now see an improved progress bar indicating consecutive registration steps;
 * When registering a demo account, users can choose "Other countries" to generate a random personal code and use it to authenticate to demo portal;
