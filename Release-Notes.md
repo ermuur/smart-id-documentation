@@ -2,6 +2,44 @@
 
 ## Release notes
 
+11.10.2017
+
+* New landing animation intro when starting registration starting from Android 5x and iOS 9x. Older devices show still image;
+* Improved animations to make the registration process and usage more fluid. These include:
+  Improved loader rotation, loader animating to success and fade-in success animations;
+Slide animations between views - from right to left when moving forward and opposite when moving backwards;
+All modals, alert and error views fade in and slightly slide in from top and disappear by fading out and sliding up;
+Improved app universal responsive design - various breakpoints for different screen sizes have been added for resizing text, buttons, icons and PIN pad;
+During registration, users can now see an improved progress bar indicating consecutive registration steps;
+When registering a demo account, users can choose "Other countries" to generate a random personal code and use it to authenticate to demo portal;
+First 10 characters of the push token are now visible in the menu for troubleshooting issues with support if push messages/transactions do not arrive automatically to the device;
+Demo app also displays info if device has been rooted or jailbroken next to the device name in menu;
+Improved error handling when registration times out and for some rare server side issues e.g. SSL pinning;
+Improved error handling for issues related to data absence in population registries (PRE) needed for registration;
+General technical error messages now also display error code or "Case ID" to better identify issues in support;
+Notification messages are now cleared when transaction is opened manually in app (Android);
+Notification messages are now cleared from the tray when there are no pending transactions (iOS);
+Migrated from Google Cloud Messaging to Firebase Cloud Messaging;
+Added UTM parameters (app version) to smart-id.com FAQ requests. User agent info is also sent with requests to portal
+Updated hybrid dependencies and Android/iOS (third party) libraries;
+General bug fixes, performance and usability improvements.
+
+* Implemented and improved plugin based ID-card authentication in addition to TLS, both authentication methods supported on a single instance;
+* Improved plugin detection and plugin min version check at the start of registration;
+* Added a mobile browser check and warning view at the start and back-to-app animation at the end of ID-card registration;
+* Added plugin distribution from config links for supported browsers;
+* Terms & Conditions can now be downloaded from the self-service portal;
+* New Latvian personal codes are now always allowed with NQ registration;
+* User is now notified in advance when registration or self-service session is about to expire;
+* User can now continue registration from self-service dashboard if there are no accounts or account registration is in progress;
+* Updated instructions & FAQ links at the start of registration and added smart-id.com link to footer;
+* Update hwcrypto, improved portal error logging for hwcrypto errors and added log requests for app and portal logging;
+* Improved authentication and application signing error handling during ID-card registration;
+* Improved error handling for issues related to data absence in population registries (PRE) needed for registration;
+* General technical error messages now also display error code or "Case ID" to better identify issues in support;
+* Demo app users can now log in to self-service by selecting "Estonia" when having checked "Other countries" in app during manual registration;
+* General bug fixes, performance and usability improvements.
+
 28.02.2017
 
 *   More reliable PIN dialogue notification for Android
