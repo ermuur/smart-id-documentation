@@ -2,7 +2,7 @@
 
 ## Release notes
 
-11.10.2017
+11.10.2017 v10
 
 * New landing animation intro when starting registration starting from Android 5x and iOS 9x. Older devices show still image;
 * Improved animations to make the registration process and usage more fluid. These include:
@@ -40,7 +40,7 @@
 * Demo app users can now log in to self-service by selecting "Estonia" when having checked "Other countries" in app during manual registration;
 * General bug fixes, performance and usability improvements.
 
-29.07.2017
+29.07.2017 v9
 
 * Redesigned Menu;
 * Redesigned "Waiting approval" dialogues with ability to restart registration from menu if needed;
