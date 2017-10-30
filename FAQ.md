@@ -17,3 +17,4 @@ Following message should be displayed:
 > https://www.smart-id.com/help/faq/#requirements-for-id-card-registration-1509 (ENG) 
 
 > Smart-ID registration in bank office:
+> https://www.smart-id.com/help/faq/using-smart-id/actions-can-smart-id-customer-service-points/
