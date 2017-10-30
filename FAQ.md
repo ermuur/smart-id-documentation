@@ -1,5 +1,5 @@
 # Error handling
-## How to handle error 471 (No suitable account of requested type found, but user has some other accounts)
+## How to handle error 471 (No suitable account of requested type found, but user has some other accounts)?
 User is having Smart-ID Basic account which can only be used in Swedbank's and SEB's internet bank.
 
 Following message should be displayed:
