@@ -1,1 +1,1 @@
-[Relying Party Integration Guide documentation](../../blob/master/README.md)
+[Relying Party Integration Guide documentation](https://github.com/SK-EID/smart-id-documentation/blob/master/README.md)
