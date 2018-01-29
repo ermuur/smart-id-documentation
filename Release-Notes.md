@@ -2,6 +2,99 @@
 
 ## Release notes
 
+29.01.2017 v12
+
+* Added home view error clearing;
+* Added prettier for hybrid file formatting;
+* Added timeout counter to RP request view;
+* Added handling of RP request with type SIGNING;
+* Added "Already have an account?" link to registration home view;
+* Added timeout for entering PINs during identity token registration;
+* Account status is now updated when app returns to foreground;
+* App no longer shows "Tap code for details" disclaimer when RP has no displayText;
+* Updated terms & conditions;
+* Updated hybrid dependencies and Android/iOS (third party) libraries;
+* Redesigned help menu:
+  * Added self-service portal link to help menu (links also open in respective languages);
+  * App and device info is added to e-mails sent to support;
+  * Contacts are shown based on app language;
+  * Removed 900 1807 number for Estonia;
+* Improved different font sizes and layout breakpoints. Icons for warning & error messages now also resize with breakpoints;
+* Improved check transaction error handling and logo animation logic;
+* Improved key generation error handling;
+* Improved general error handling:
+* Added "Session expired" error message;
+* Added error messages for various PRE errors;
+* Added "Account not found" error when push message arrived after account is deleted;
+* Added view for INVALID_PERSONAL_CODE error during manual and banklink registration;
+* Added “Poor internet connection” error with more detailed NSURLError codes instead of “Service temporarily unavailable” where applicable;
+* Improved logging:
+Added Lib errors ERROR_CODE_RESPONSE_TIMEOUT, ERROR_CODE_SERVER_INTERNAL_ERROR and App SSL exceptions to portal;
+Added registration abandoned event logging when account is deleted in DOCUMENT_CREATED state;
+Input is scrolled into view when it is hidden after keyboard opens;
+Removed automatic account deletion logic;
+Hide main webview while showing banklink and remove/pause loaders while not visible to reduce unnecessary rendering;
+Changed MID polling times. New values: initial delay = 15 sec, polling timeout = 3 sec;
+Fixed cancelling registration during key generation;
+Fixed user cancelling in SEB LT banklink views resulting in technical error;
+Fixed "Account deleted" view popping up before deletion process is completed;
+Fixed keyboard staying up when submitting form and navigating to following views (e.g. with keyboard enter button);
+Fixed resolving account state for account status view. Fixes animations and app not loading after deleting account in portal;
+Added Android root info to Menu (Android);
+Added scroll indicator (arrow) for banklink view (Android);
+Added root check using Lib's getSafetyNetAttestation method (Android);
+Added timer to inactive transaction error views. App now closes automatically after time expires (Android);
+Implemented code obfuscation and optimisation with proguard. Removed Multidex (Android);
+Retry loading transaction when it initially fails due to ERROR_CODE_RESPONSE_TIMEOUT (Android);
+RP request view is now automatically hidden when new push arrives and active RP request is completed (Android);
+Notification (toast) is now shown in app when navigating to external URLs and device has no browser installed (Android);
+Potentially fix joda.time crash on some devices (Android);
+Fixed Crash on Android 4.x devices when pressing help icon in native Error view (Android);
+Removed automatic account deletion functionality - now user has to press button for account to be deleted. If it fails, error is shown;
+Fixed SSL error when opening Swebank banklink, also correct error message is now shown when Portal SSL pinning fails (Android);
+Fixed bug where back stops working when user manages to open two webviews (pressing buttons very fast) and when pressing back immediately (200ms) before banklink webview is loaded (Android);
+Fixed keyboard showing when pressing "Back" in banklink view while keyboard is opened (Android);
+Fixed "Registration terminated" showing up every time app is started after app was killed after creating PINs in ID-card registration (Android);
+Portal shared cookies are now added to banklink authentication request (iOS);
+Improved CSR transaction error handling when no result is returned from Lib (iOS);
+Fixed Safari 9 buttons not working issue in Terms and MID application view when user has scrolled to the end or back to the beginning;
+Fixed missing parent signing links for minors registration (iOS);
+Fixed menu not closing properly on iOS 11.2 when changing language (iOS);
+Fixed being able to start MID signing multiple times because UI problems (iOS);
+Fixed CSR transaction shown when returning to registration from help view (iOS);
+Fixed pdf icons not rendering correctly in iOS <=8.3. Works when dimensions are multiples of 8 (iOS);
+General bug fixes, performance and usability improvements.
+Portal 12x
+
+Added more PRE error messages;
+Added app minimum version check;
+Added method for app to log events;
+Added a "X-Request-ID" header to all CSI requests;
+Added BEGIN and END tags to certificates downloaded from self-service;
+Added more detailed error handling to ID-card authentication to self-service;
+Added notification about updating certificates on self-service ID-card authentication failure;
+Added FAQ link with instructions to the start of minors registration;
+Added FAQ link redirecting Latvians with new personal code to go to bank office for registration;
+Redesigned self-service login page with redirects to start/continue registration;
+Self-service now shows notification about old accounts for Latvians with new personal code;
+Self-service now logs user out if the Smart-ID account that was used to log in is deleted through self-service;
+Selecting cancel on SEB Lithuanian banklink now sends the app a more appropriate error message;
+Updated UI & backend third-party libraries;
+Re-enabled plugin based ID-card authentication to self-service;
+Removed some duplicate logging from banklink registration flow;
+Changed the Estonian support number fallback to only +(372) 715 1606;
+The session expiry dialog no longer shows during registration before authentication and after completion;
+Portal language can now be set with the lang URL parameter and signing links now direct to the correct language;
+Improved error handling if the is-logged-in request fails on page load and error messages for plugin missing and outdated;
+Slightly improved MID and ID-Card error responses and removed a deprecated method;
+Fixed app event logging API.
+Fixed terms & conditions button disappearing sometimes;
+Fixed occasional incorrect tracking ID on "Register button clicked" log event.
+Fixed a bug where user data was requested twice after logging into self-service;
+Fixed EULA with ID-card minor registration, links in terms & conditions are also now clickable;
+Fixed a bug for when clicking on an e-mail address would sometimes prefill email with an incorrect message;
+General bug fixes, performance and usability improvements.
+
 11.10.2017 v10
 
 * New landing animation intro when starting registration starting from Android 5x and iOS 9x. Older devices show still image;
