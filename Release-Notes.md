@@ -2,7 +2,7 @@
 
 ## Release notes
 
-29.01.2017 v12
+29.01.2018 v12
 
 * Added home view error clearing;
 * Added prettier for hybrid file formatting;
@@ -63,34 +63,34 @@
 * Fixed pdf icons not rendering correctly in iOS <=8.3. Works when dimensions are multiples of 8 (iOS);
 * General bug fixes, performance and usability improvements.
 
-Added more PRE error messages;
-Added app minimum version check;
-Added method for app to log events;
-Added a "X-Request-ID" header to all CSI requests;
-Added BEGIN and END tags to certificates downloaded from self-service;
-Added more detailed error handling to ID-card authentication to self-service;
-Added notification about updating certificates on self-service ID-card authentication failure;
-Added FAQ link with instructions to the start of minors registration;
-Added FAQ link redirecting Latvians with new personal code to go to bank office for registration;
-Redesigned self-service login page with redirects to start/continue registration;
-Self-service now shows notification about old accounts for Latvians with new personal code;
-Self-service now logs user out if the Smart-ID account that was used to log in is deleted through self-service;
-Selecting cancel on SEB Lithuanian banklink now sends the app a more appropriate error message;
-Updated UI & backend third-party libraries;
-Re-enabled plugin based ID-card authentication to self-service;
-Removed some duplicate logging from banklink registration flow;
-Changed the Estonian support number fallback to only +(372) 715 1606;
-The session expiry dialog no longer shows during registration before authentication and after completion;
-Portal language can now be set with the lang URL parameter and signing links now direct to the correct language;
-Improved error handling if the is-logged-in request fails on page load and error messages for plugin missing and outdated;
-Slightly improved MID and ID-Card error responses and removed a deprecated method;
-Fixed app event logging API.
-Fixed terms & conditions button disappearing sometimes;
-Fixed occasional incorrect tracking ID on "Register button clicked" log event.
-Fixed a bug where user data was requested twice after logging into self-service;
-Fixed EULA with ID-card minor registration, links in terms & conditions are also now clickable;
-Fixed a bug for when clicking on an e-mail address would sometimes prefill email with an incorrect message;
-General bug fixes, performance and usability improvements.
+* Added more PRE error messages;
+* Added app minimum version check;
+* Added method for app to log events;
+* Added a "X-Request-ID" header to all CSI requests;
+* Added BEGIN and END tags to certificates downloaded from self-service;
+* Added more detailed error handling to ID-card authentication to self-service;
+* Added notification about updating certificates on self-service ID-card authentication failure;
+* Added FAQ link with instructions to the start of minors registration;
+* Added FAQ link redirecting Latvians with new personal code to go to bank office for registration;
+* Redesigned self-service login page with redirects to start/continue registration;
+* Self-service now shows notification about old accounts for Latvians with new personal code;
+* Self-service now logs user out if the Smart-ID account that was used to log in is deleted through self-service;
+* Selecting cancel on SEB Lithuanian banklink now sends the app a more appropriate error message;
+* Updated UI & backend third-party libraries;
+* Re-enabled plugin based ID-card authentication to self-service;
+* Removed some duplicate logging from banklink registration flow;
+* Changed the Estonian support number fallback to only +(372) 715 1606;
+* The session expiry dialog no longer shows during registration before authentication and after completion;
+* Portal language can now be set with the lang URL parameter and signing links now direct to the correct language;
+* Improved error handling if the is-logged-in request fails on page load and error messages for plugin missing and outdated;
+* Slightly improved MID and ID-Card error responses and removed a deprecated method;
+* Fixed app event logging API.
+* Fixed terms & conditions button disappearing sometimes;
+* Fixed occasional incorrect tracking ID on "Register button clicked" log event.
+* Fixed a bug where user data was requested twice after logging into self-service;
+* Fixed EULA with ID-card minor registration, links in terms & conditions are also now clickable;
+* Fixed a bug when clicking on an e-mail address would sometimes prefill email with an incorrect message;
+* General bug fixes, performance and usability improvements.
 
 11.10.2017 v10
 
