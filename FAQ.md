@@ -16,7 +16,7 @@ Yes, we are happy to provide you free support for integrating the Smart-ID. Plea
 These are unique identifiers of the e-service provider. The e-service provider name is displayed to the end-user in Smart-ID app during authentication and signing. The service provider should inform SK of the ServiceName that will be used. The RPUUID is service internal parameter that is provided by SK to the e-service provider. Both parameters are fixed in agreement between e-service provider and SK ID Solutions.
  
 ### What are the options for implementing automated tests for the Smart-ID integration?
-For making automated integration testing easier there are Smart-ID auto-responder test accounts. These accounts are returning pre-defined status codes and responses according to specifications. This means that you don’t have to automate Smart-ID app side during the testing, this is already done by SK.
+For making automated integration testing easier there are Smart-ID auto-responder test accounts https://github.com/SK-EID/smart-id-documentation/wiki/Environment-technical-parameters#test-accounts-for-automated-testing . These accounts are returning pre-defined status codes and responses according to specifications. This means that you don’t have to automate Smart-ID app side during the testing, this is already done by SK.
 
 ### Is the app-2-app integration available?
 Yes and no. You cannot call the Smart-ID app directly from some other application. You have to do the server side integration in a way that your app is calling your server and your server is making RP API call to the Smart-ID platform. The reason for that is our security and business model.
