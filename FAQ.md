@@ -1,5 +1,5 @@
 
-* [FAQ](#FAQ)
+* [FAQ](#faq)
 * [Error handling](#error-handling)
 
 ## FAQ
