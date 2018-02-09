@@ -1,6 +1,6 @@
 
 * [FAQ](#FAQ)
-* [Error handling](#Error-handling)
+* [Error handling](#error-handling)
 
 ## FAQ
 ### Where should I start to integrate Smart-ID to my e-service?
