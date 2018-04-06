@@ -7,3 +7,4 @@ Available examples:
 Verification code calculation examples
 1. [Smart-ID signature verification and verification code calculation example in java](https://github.com/SK-EID/smart-id-documentation/blob/master/files/verify.java)
 2. [Smart-ID verification code calculation example in php](https://github.com/SK-EID/smart-id-documentation/blob/master/files/control_code.php)
+3. [Smart-ID verification code calculation example in C](https://github.com/SK-EID/smart-id-documentation/blob/master/files/main.c)
