@@ -2,6 +2,17 @@
 
 ## Release notes
 
+19.04.2018 v13
+
+* Optimised layout for iPhone X;
+* Added option to toggle "allow screenshot" functionality;
+* "User info" is now also shown with unregistered account menu (only "Device" info is shown without account);
+* App now shows transaction details along with verification code in the same view without having to toggle the verification code and details separately;
+* Google Play now has also better differentiation between Smart-ID live and demo apps;
+* Improved error handling for older app versions that are not supported anymore and will require updating to a newer version;
+* Improved error handling for secure connections on iOS when issue is likely caused by poor Internet connection;
+* General bug fixes, performance and usability improvements.
+
 29.01.2018 v12
 
 * Added home view error clearing;
