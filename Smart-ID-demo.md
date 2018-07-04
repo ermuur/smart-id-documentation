@@ -18,6 +18,7 @@ The demo version has the following functionality:
 
 1.  User can use Smart-ID to log into the website (bank123 demo portal).
 2.  User can login Smart-ID self service portal [https://sid.demo.sk.ee/portal/](https://sid.demo.sk.ee/portal) and get an overview of accounts and to delete an account.
+3.  User can login to any test e-service which is integrated with Smart-ID demo service. 
 
 </div>
 
