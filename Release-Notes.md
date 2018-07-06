@@ -4,6 +4,7 @@
 
 15.06.2018 v14 (demo)
 
+* Smart-ID certificates will now be implementing 6K RSA keys, it was 4K RSA keys
 * Made whole home screen tap/click to trigger check transaction (excluding top edge);
 * Added "Existing accounts" modal after registration if user has more than one account;
 * Added transaction timeout modal when less than 30 seconds left to complete transaction;
