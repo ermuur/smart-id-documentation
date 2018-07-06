@@ -1,6 +1,7 @@
+
 We have reached the final stage in certifying that signatures given with Smart-ID would correspond to the level of qualified signatures. Due to this, many important changes will take place.
 
-For services, the biggest change will be that starting from version 14 of the Smart-ID application, all certificates created by Smart-ID will have longer keys than previously. If up until now, Smart-ID certificates used 4K RSA keys, then we will now be implementing 6K RSA keys. As Smart-ID’s API will not be changing, there will be no need to make any changes in service side.
+**For services, the biggest change will be that starting from version 14 of the Smart-ID application, all certificates created by Smart-ID will have longer keys than previously. If up until now, Smart-ID certificates used 4K RSA keys, then we will now be implementing 6K RSA keys. As Smart-ID’s API will not be changing, there will be no need to make any changes in service side.**
 
 Regarding this change, we ask that you make sure that your information systems do not have any restrictions related to the use of 6K RSA keys as soon as possible. You can do so in our demo environment, where you must create a new account with version 14 of the Smart-ID application.
 
