@@ -31,9 +31,12 @@
 |  relyingPartyName | DEMO |
 
 Smart-ID login buttons. Free to use! [Download](https://github.com/SK-EID/smart-id-documentation/raw/master/files/Smart-ID_login.zip)  
-NB! DEMO relyingPartyUUID has no access to Smart-ID Basic accounts. If you would like to test with Smart-ID Basic accounts please write to support@sk.ee .
 
-*   When using "certificateLevel":"ADVANCED" in requests then HTTP error _403 Forbidden_ is returned.
+## Smart-ID Basic (ADVANCED) level accounts
+
+DEMO relyingPartyUUID has no access to Smart-ID Basic accounts. If you would like to test with Smart-ID Basic accounts please write to support@sk.ee .
+
+*   When using "certificateLevel":"ADVANCED" with wrong relyingPartyUUID in requests then HTTP error _403 Forbidden_ is returned.
 *   When user has only Smart-ID Basic account then HTTP error _404 Not Found_ is returned.
 
 
