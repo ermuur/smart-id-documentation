@@ -36,9 +36,8 @@ Getting Smart-ID up and running is easy. Follow those easy 4 steps:
         [https://play.google.com/apps/testing/com.stagnationlab.sk](https://play.google.com/apps/testing/com.stagnationlab.sk) 
 
     2.  Steps to install on iOS (minimum iOS8 required):
-        1.  Send your Apple ID e-mail address to [support@sk.ee](mailto:support@sk.ee?subject=Smart-ID%20demo%20installation%20request%20for%20iOS&body=Hello!%20Please%20activate%20the%20Smart-ID%20demo%20application%20for%20me.%20My%20e-mail%20address%20is:) (E-mail subject: Smart-ID demo installation request for iOS).
-        2.  Wait for response from support and activate account
-        3.  Wait for e-mail to redeem Testflight app testing
+        1.  Download Testflight https://itunes.apple.com/us/app/testflight/id899247664?mt=8
+        2.  Join Smart-ID demo beta app in https://testflight.apple.com/join/DoWddZjR
 2.  **Start the app**
     1.  Start the Smart-ID app and choose the Register button.
 3.  **Prove your identity**
