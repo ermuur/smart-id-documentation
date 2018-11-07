@@ -396,4 +396,4 @@ Together, they provide the following functionality.
 
 The Common Criteria evaluation has been done on the EAL4 level augmented with the component `AVA_VAN.5`. This means that during the evaluation it is assured that Smart-ID QSCD components are resistant to deliberate attacks by experts possessing a high attack potential with advanced knowledge of security principles and concepts employed by the Smart-ID QSCD.
 
-The Smart-ID SecureZone Security Target document describes security properties of the system and scope of the evaluation by using Common Criteria specific terms.  
+The [Smart-ID SecureZone Security Target](https://github.com/SK-EID/smart-id-documentation/blob/master/files/Smart_ID_SecureZone_Security_Target.pdf) document describes security properties of the system and scope of the evaluation by using Common Criteria specific terms.  
