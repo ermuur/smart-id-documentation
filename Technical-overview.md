@@ -17,7 +17,7 @@
         *   [Smart-ID Transaction Context](#smart-id-transaction-context)
         *   [Protections against brute-force attack trying all PINs](#protections-against-brute-force-attack-trying-all-pins)
         *   [Clone Detection](#clone-detection)
-        *   [Certification of Smart-ID SSCD](#certification-of-smart-id-sscd)
+        *   [Certification of Smart-ID QSCD](#certification-of-smart-id-sscd)
 
 </div>
 
@@ -47,8 +47,8 @@ This document gives closer look to the technical underpinnings of the Smart-ID s
 *   HSM - Hardware security module. The Smart-ID HSM is running in the FIPS 186-4 mode and provides high level assurances about the security of the private keys and other cryptographic materials protected by the HSM.
 *   RA - Registration Authority. Component in the Smart-ID solution, which implements the User registration processes and performs the identity proofing of the Users.
 *   RP - Relying Party. This is the external organisation, which is using the Smart-ID solution to authenticate the customers and/or to get digital signatures from the customers.
-*   SSCD - Secure Signature Creation Device. Component which securely holds the private key and computes electronic signature in a secure way and mitigates the related security threats. Smart-ID solution includes the SSCD component.
-*   QSCD - Qualified Signature Creation Device. An SSCD, which complies with the requirements defined by Annex II of the [Regulation No 910/2014](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG).
+*   SSCD - Secure Signature Creation Device. Component which securely holds the private key and computes electronic signature in a secure way and mitigates the related security threats. 
+*   QSCD - Qualified Signature Creation Device. A SSCD, which complies with the requirements defined by Annex II of the [Regulation No 910/2014](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG).
 *   User - Physical person, who has subscribed to the Smart-ID services, performed the identity verification and has installed the Smart-ID App on his mobile device.
 
 ## Smart-ID services
@@ -142,7 +142,7 @@ The high-level overview to the simplified context of the Smart-ID solution is gi
 6.  Smart-ID SecureZone - This is the component, which is handling the cryptography tasks and key pair generation on the server-side. The SecureZone also requests the cryptographic operations from Smart-ID HSM.
 7.  RA - Registration Authority. This is the component, which implements the registration processes and performs the Registration Authority duties. There are multiple RA-s to correspond to the different registration process variants, for example, on-site registration with human employees, performing the identity proofing and self-service registration portals, which use third-party authentication services.
 8.  CA - This is the CA, which is issuing the X.509 certificates for the authentication and signature key pairs. There are multiple CA-s to correspond to the different levels of Smart-ID accounts, for example, certificates for the Smart-ID Basic accounts are issued from different CA.
-9.  SSCD - Secure Signature Creation Device. This is the logical component, consisting of the Smart-ID App Lib and Smart-ID SecureZone and Smart-ID HSM components and which provides same kind of services as the smart-card based SSCDs. It is considered during the security analysis and the Common Criteria evaluation.
+9.  QSCD - Qualified Signature Creation Device. This is the logical component, consisting of the Smart-ID App Lib and Smart-ID SecureZone and Smart-ID HSM components and which provides same kind of services as the smart-card based QSCDs. It is considered during the security analysis and the Common Criteria evaluation.
 
 ### Smart-ID public APIs
 
@@ -378,11 +378,11 @@ The three kind of one-time materials are required, so that the API method invoca
 
 The clone detection protocol is mostly intended to be used during the signature creation protocol. Additionally, the Smart-ID App registers the alarms with the mobile device operating systems and periodically performs the clone detection in the background as well, even when the user haven’t explicitly started a new authentication or signature transaction.
 
-### Certification of Smart-ID SSCD
+### Certification of Smart-ID QSCD
 
-The Smart-ID SSCD is the logical component, which provides the same kind of features as the smart-card based Secure Signature Creation Device (SSCD). Smart-ID solution has been carefully designed from the start to fulfil all the QSCD requirements. In order to gain trust and confidence in the Smart-ID solution and to verify that the QSCD requirements have been met, the solution has been submitted to the Common Criteria evaluation.
+The Smart-ID QSCD is the logical component, which provides the same kind of features as the smart-card based Secure Signature Creation Device (SSCD). Smart-ID solution has been carefully designed from the start to fulfil all the QSCD requirements. In order to gain trust and confidence in the Smart-ID solution and to verify that the QSCD requirements have been met, the solution has been evaluated according to the Common Criteria standard.
 
-Smart-ID SSCD consists of the following components.
+Smart-ID QSCD consists of the following components.
 
 *   Smart-ID App Library
 *   Smart-ID SecureZone
@@ -391,7 +391,9 @@ Smart-ID SSCD consists of the following components.
 Together, they provide the following functionality.
 
 1.  Generation of the public key of the user and shares of the private key.
-2.  Computation of the signature _S_ on the message _M_, while under the sole control of the user
+2.  Computation of the signature _S_ on the message _M_, while under the sole control of the user.
 3.  Destruction of the user’s key material, after the keys are no longer useful.
 
-The Common Criteria evaluation is done on the level EAL4 augmented with the component `AVA_VAN.4`. This means that during the evaluation it is assumed that Smart-ID SSCD components are subject to deliberate attacks by experts possessing a high attack potential with advanced knowledge of security principles and concepts employed by the Smart-ID SSCD.
+The Common Criteria evaluation has been done on the EAL4 level augmented with the component `AVA_VAN.5`. This means that during the evaluation it is assured that Smart-ID QSCD components are resistant to deliberate attacks by experts possessing a high attack potential with advanced knowledge of security principles and concepts employed by the Smart-ID QSCD.
+
+The Smart-ID SecureZone Security Target document describes security properties of the system and scope of the evaluation by using Common Criteria specific terms.  
