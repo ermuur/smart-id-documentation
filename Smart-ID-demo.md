@@ -62,6 +62,9 @@ To see the Smart-ID in action and to actually use it to log into a website and g
 
 *   [http://smid.demo.sk.ee/](http://smid.demo.sk.ee/#login) Bank123 demo portal to demonstrate Smart-ID for online banking services
 
+Disclaimer
+For demo purposes, some of the security features of the Smart-ID demo environment are not identical with the production environment. The Smart-ID demo environment is not intended to be used for security testing. 
+
 </div>
 
 <div class="content-section">
