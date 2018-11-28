@@ -2,15 +2,15 @@
 
 ## Release notes
 
-15.06.2018 v14 (demo)
+15.06.2018 v14
 
 * New Smart-ID account will be created with 6K RSA keys and certificates (existing accounts are using 4K RSA keys)
 * Made whole home screen tap/click to trigger check transaction (excluding top edge);
 * Added "Existing accounts" modal after registration if user has more than one account;
 * Added transaction timeout modal when less than 30 seconds left to complete transaction;
-*Added better scroll indication and buttons visibility with longer text - when view is scrollable, text will start fading out below;
-*Added Smart-ID Basic (NQ) warning view to banklink registration recommending to register a Smart-ID (Q) account instead;
-*Added QSCD info to menu if account has QSCD certificate, displayed as “Smart-ID Qualified Electronic Signature”;
+* Added better scroll indication and buttons visibility with longer text - when view is scrollable, text will start fading out below;
+* Added Smart-ID Basic (NQ) warning view to banklink registration recommending to register a Smart-ID (Q) account instead;
+* Added QSCD info to menu if account has QSCD certificate, displayed as “Smart-ID Qualified Electronic Signature”;
 * Separated Settings and Application info into two menu sections;
 * Improved error handling for older device operating systems that are not supported anymore and will require updating to a newer version;
 * Added “Open system notification settings" option to menu and implemented notification channels on Android 8+:
