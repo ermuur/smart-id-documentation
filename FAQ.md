@@ -22,6 +22,9 @@ For making automated integration testing easier there are Smart-ID auto-responde
 Yes and no. You cannot call the Smart-ID app directly from some other application. You have to do the server side integration in a way that your app is calling your server and your server is making RP API call to the Smart-ID platform. The reason for that is our security and business model.
 Still we have in our 2018 Q4 roadmap some developments that will make app-2-app integration smoother (especially in iOS platform).
 
+### What information contains the Smart-ID certificate?
+Detailed info is at [Certificate and OCSP Profile for Smart-ID](https://www.sk.ee/upload/files/SK-CPR-SMART-ID-EN-v4_1-20181024.pdf)
+
 ## Error handling
 ### How to handle error 471 (No suitable account of requested type found, but user has some other accounts)?
 User is having Smart-ID Basic account which can only be used in Swedbank's and SEB's internet bank.
