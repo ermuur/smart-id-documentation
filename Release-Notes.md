@@ -1,8 +1,20 @@
 <div class="content-section">
 
-## Release notes
+# Release notes
 
-15.06.2018 v14
+## Smart-ID Core Server v11.4
+Released: TBA
+
+Changes in [Relying Party Integration Guide documentation](https://github.com/SK-EID/smart-id-documentation/tree/documentation-11.4) ([diff](https://github.com/SK-EID/smart-id-documentation/compare/documentation-10.9...documentation-11.4))
+
+* Impelemented three-choice control code
+* Improved operational robustness
+* Log improvements
+* Revised SZv2 key status caching
+* Improvements in automated testing 
+
+## Smart-ID App v14
+Released: 15.06.2018
 
 * New Smart-ID account will be created with 6K RSA keys and certificates (existing accounts are using 4K RSA keys)
 * Made whole home screen tap/click to trigger check transaction (excluding top edge);
@@ -19,7 +31,8 @@
 * Implemented "Remember login details" functionality in self-service portal;
 * General bug fixes, performance and usability improvements.
 
-19.04.2018 v13
+## Smart-ID App v13
+Released 19.04.2018
 
 * Optimised layout for iPhone X;
 * Added option to toggle "allow screenshot" functionality;
@@ -30,7 +43,8 @@
 * Improved error handling for secure connections on iOS when issue is likely caused by poor Internet connection;
 * General bug fixes, performance and usability improvements.
 
-29.01.2018 v12
+## Smart-ID App v12
+Released: 29.01.2018
 
 * Added home view error clearing;
 * Added prettier for hybrid file formatting;
@@ -120,7 +134,11 @@
 * Fixed a bug when clicking on an e-mail address would sometimes prefill email with an incorrect message;
 * General bug fixes, performance and usability improvements.
 
-11.10.2017 v10
+<details>
+  <summary>Older changes</summary>
+
+## Smart-ID App v10
+Released: 11.10.2017
 
 * New landing animation intro when starting registration starting from Android 5x and iOS 9x. Older devices show still image;
 * Improved animations to make the registration process and usage more fluid. These include:
@@ -158,7 +176,8 @@
 * Demo app users can now log in to self-service by selecting "Estonia" when having checked "Other countries" in app during manual registration;
 * General bug fixes, performance and usability improvements.
 
-29.07.2017 v9
+## Smart-ID App v9
+Released: 29.07.2017
 
 * Redesigned Menu;
 * Redesigned "Waiting approval" dialogues with ability to restart registration from menu if needed;
@@ -209,7 +228,7 @@
 * Fixed iframe reload issue on language change, added modal for cancel conformation;
 * General bug fixes, performance and usability improvements.
 
-28.02.2017
+## 28.02.2017
 
 *   More reliable PIN dialogue notification for Android
 *   Personal code not shown on home screen
@@ -217,33 +236,33 @@
 *   Bug fixes, performance and usability improvements
 
 
-02.01.2017
+## 02.01.2017
 
 *   Smart-ID has a new look - white background for Smart-ID and blue for Smart-ID Basic
 *   Full support for 5 languages implemented - in addition to English and Russian, we support all Baltic languages (Estonian, Latvian and Lithuanian)
 *   Improved user experience - account registration with ID-card is made much easier for you!
 *   Keeping in mind your safety and security reasons, easy PIN-codes (e.g 1234, 0000) are not allowed
 
-20.12.2016
+## 20.12.2016
 
 *   Due to popular demand, custom PIN selection is now set as default
 *   ID-card registration optimisation: contact data is now entered in self-service portal
 *   Audio notifications (for transactions) in iOS platform
 *   Many visual tweaks and fixes
 
-30.11.2016
+## 30.11.2016
 
 *   ID-card based registration for Estonia, Latvia, Lithuania
 *   Redesigned home screen, issuance method and country selection
 *   Redesigned self-service portal
 *   General UX improvements
 
-02.11.2016
+## 02.11.2016
 
 *   New visual
 *   Added uservoice feedback system
 
-25.10.2016
+## 25.10.2016
 
 *   Added Latvian, Lithuanian and Russian languages
 *   Added Google analytics
@@ -251,14 +270,14 @@
 *   Dropped JSON/RPC integration API support.
 *   Several changes in self service portal, including mobile view.
 
-16.09.2016
+## 16.09.2016
 
 *   Multilevel PIN locking. After three incorrect PIN entries, the authentication or signing function is locked for 3 hours. Upon another three incorrect PIN entries, the function is locked for 24 hours. After 24 hours the user has a possibility to enter the PIN codes three more times - if all entries are still invalid then the account is locked and certificates are revoked. To use Smart-ID the user must go through the registration process again.
 *   Major changes as regards the issuance process (CSR signing). These are mostly internal changes and don't affect the user flow.
 *   Some UX improvements
 *   The first version of self service portal available at [https://sid.demo.sk.ee/portal/](https://sid.demo.sk.ee/portal) . The current version supports only login with Smart-ID, contains a possibility to get an overview of user accounts and to close an account
 
-19.08.2016
+## 19.08.2016
 
 *   Multi-device support (user has several active accounts on different devices). When user has multiple active accounts and a new transaction occurs, a confirmation screen is shown
 *   Changed bank selection during banklink authentication. User has to choose first the bank and afterwards the country of the residence.
@@ -270,11 +289,11 @@
 *   RP JSON/RPC API improvements
 *   Several internal improvements
 
-01.07.2016
+## 01.07.2016
 
 *   Added bank authentication support for Swedbank customers in Latvia
 
-29.06.2016
+## 29.06.2016
 
 *   Added manual registration possibility (in addition to Swedbank EE and SEB EE bank authentication)
 *   Improved PIN-pad view
@@ -289,8 +308,8 @@
 *   “Wrong PIN message” view shows now attempts left (iOS)
 *   Improved “Check transaction” button behaviour (iOS)
 
-15.06.2016
+## 15.06.2016
 * First public beta release
 
-
+</details>
 </div>
