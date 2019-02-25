@@ -39,7 +39,9 @@ Smart-ID combines well-known technologies and several new technical innovations 
 4.  strong authentication service, compliant with the [PSD II regulations](http://ec.europa.eu/finance/payments/framework/index_en.htm) and [ECB recommendations](https://www.ecb.europa.eu/press/pr/date/2013/html/pr130131_1.en.html),
 5.  electronic signatures, compliant with the [eIDAS regulations](https://ec.europa.eu/digital-single-market/en/trust-services-and-eid).
 
-This document gives closer look to the technical underpinnings of the Smart-ID solution.
+This document gives closer look to the technical underpinnings of the Smart-ID solution. 
+
+A technology has been used in this product for which Cybernetica AS has filed a patent application or a patent has been granted.
 
 ## Terms and abbreviations
 
