@@ -2,6 +2,67 @@
 
 # Release notes
 
+## Smart-ID App v15
+Released: TBA
+
+* Added “Confirm certificates” view;
+* Added better informing user of timelocking;
+* Added ID-card registering video link to needed pages;
+* Added descriptions to “Choose Country” & Mobile-ID authentication views;
+* Added third party license info to show in app & removed unnecessary licenses;
+* Added brand colour and image to Medicinos Bankas registration method in Lithuania;
+* Added missing push token or push notifications disabled design for home screen;
+* Improved back button behaviour in MID and SID auth views;
+* Improved error message description for INVALID_TRANSACTION_STATE error code;
+* Updated dependencies & libraries to newest versions ;
+* Updated authentication provider selection flow according to latest design;
+* Design improvements for licenses and push notification alert;
+* Show key lock info on home screen when returning from KEY_UNUSABLE_ERROR view;
+* Replaced original Terms & Conditions with short summaries;
+* "Choose another method" in NQ warning view now takes always back to “Authentication methods” view;
+* An additional dialog can now be shown optionally, requiring user to select correct control code before proceeding with transaction;
+* Certificate subject is now sent to hybrid;
+* Hide phone number input until e-mail is rejected;
+* Root check improved during registration;
+* When system does not support specific input hint request, remember it and do not attempt again;
+* Prevent race condition which causes APP_REGISTRATION_NOT_INITIALIZED error;
+* Prevent showing "Confirm cancel" view if users cannot continue registration after error;
+* Removed e-mail link & added contact customer service links in help menu;
+* Fixed regression: portal ID-card registration URL changes were ignored;
+* Fixed cases where cursor moves to the left of "+" in phone number input;
+* Added clone detect message to have link to FAQ (Android);
+* Added email/phone number hint (requested from system), improved error handling when hint request fails (Android);
+* Improve error handling when Account locked (Android);
+* Show "Transaction not found error" when Transaction activity is opened without transaction/rp request (Android);
+* Correctly show next view when navigating from transaction view that is displayed over lock screen (Android);
+* Check if attestation data is present before trying to read the data (Android);
+* When app is opened with Google Play Store, then open correct activity (Android);
+* Handle PORTAL_INVALID_APP_VERSION error in SSO webview (Android);
+* Improved transition from "Preparing for singing" to "Transaction" view (Android);
+* Allow only one concurrent hint request (Android);
+* Improved automatic root detection and if device has no account (Android);
+* Fixed handling SERVER_KEY_UNUSABLE error when resuming app from background (Android);
+* Fixed crash in Transaction activity when API initialization completes after activity is destroyed (Android);
+* Added PRNG_TEST_FAILED error code (iOS);
+* Added error code logging when Lib returns too short PIN length (iOS);
+* Added local HTML loading as a fallback when loading the remote HTML fails (iOS);
+* Added workaround for webview views getting stuck in scrolled up position when keyboard is closed (iOS);
+* Improved PIN length handling (iOS);
+* Improved outdated app error handling when using bank auth (iOS);
+* Improved http request retry logic when app returns from background (iOS);
+* Improved clone detected error handling when Ok button is pressed on error view (iOS);
+* Removed maximum PIN length message from being shown when pinpad OK is not shown (iOS);
+* Show SFSafariViewController color depending on Q or NQ level. (iOS)
+* Fixed for DNB LV authentication (iOS);
+* Fixed crash when entering PIN code quickly (iOS);
+* Fixed verification code modal staying hidden when show modal animation is started before hide modal animation has finished (iOS);
+* Fixed first verification code shown in transaction view when transaction view is shown again after correct verification code has been selected (iOS);
+* Fixed crash caused by accountKey added to error extra info without creating dictionary from it (iOS);
+* Fixed retry button not shown for network error when creating account (iOS);
+* Fixed error after returning to foreground or unlocking the screen while registration provider status requests are being made (iOS);
+* Fixed portal SSL error try again during registration resulting in home screen being shown (iOS);
+* General bug fixes, performance and usability improvements.
+
 ## Smart-ID Core Server v11.4
 Released: TBA
 
